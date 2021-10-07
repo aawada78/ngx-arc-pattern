@@ -27,12 +27,12 @@
     ]
   },
   "projects": {
-    "ng-configurable-app": {
+    "configurable-app": {
       "tags": []
     },
-    "ng-configurable-app-e2e": {
+    "configurable-app-e2e": {
       "tags": [],
-      "implicitDependencies": ["ng-configurable-app"]
+      "implicitDependencies": ["configurable-app"]
     },
     "shared": {
       "tags": []

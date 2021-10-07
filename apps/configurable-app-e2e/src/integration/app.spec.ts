@@ -1,6 +1,6 @@
 import { getGreeting } from '../support/app.po';
 
-describe('ng-configurable-app', () => {
+describe('configurable-app', () => {
   beforeEach(() => cy.visit('/'));
 
   it('should display welcome message', () => {
@@ -8,6 +8,6 @@ describe('ng-configurable-app', () => {
     cy.login('my-email@something.com', 'myPassword');
 
     // Function helper example, see `../support/app.po.ts` file
-    getGreeting().contains('Welcome to ng-configurable-app!');
+    getGreeting().contains('Welcome to configurable-app!');
   });
 });

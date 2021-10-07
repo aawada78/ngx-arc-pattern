@@ -1,5 +1,5 @@
 module.exports = {
-  displayName: 'ng-configurable-app',
+  displayName: 'configurable-app',
   preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
@@ -8,7 +8,7 @@ module.exports = {
       stringifyContentPathRegex: '\\.(html|svg)$',
     },
   },
-  coverageDirectory: '../../coverage/apps/ng-configurable-app',
+  coverageDirectory: '../../coverage/apps/configurable-app',
   transform: {
     '^.+\\.(ts|js|html)$': 'jest-preset-angular',
   },
