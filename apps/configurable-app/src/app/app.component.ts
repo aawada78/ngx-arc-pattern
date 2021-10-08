@@ -12,13 +12,18 @@ export class AppComponent implements OnInit {
   client = '';
   provider = '';
 
-  constructor(private appConfigService: AppConfigService) {
-  }
+  private appConfig : any = null;
+
+  constructor(private appConfigService: AppConfigService) {}
 
   ngOnInit(): void {
-    this.title = this.appConfigService.getConfig().name;
-    this.version = this.appConfigService.getConfig().version;
-    this.client = this.appConfigService.getConfig().client;
-    this.provider = this.appConfigService.getConfig().provider;
+    this.appConfig = this.appConfigService.getConfig();
+
+    if (this.appConfig) {
+      this.title = this.appConfig.name;
+      this.version = this.appConfig.version;
+      this.client = this.appConfig.client;
+      this.provider = this.appConfig.provider;
+    }
   }
 }

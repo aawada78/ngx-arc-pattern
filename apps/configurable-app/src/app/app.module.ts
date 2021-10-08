@@ -9,7 +9,9 @@ import { AppComponent } from './app.component';
 const myAppInitializerFn = (appConfig: AppConfigService) => {
   return () => {
     console.log('App initialized …');
-    return appConfig.loadAppConfig('/assets/config/appConfig.json');
+    // configuration can be locally placed in the assets or placed on a CDN
+    let url =  '/assets/config/appConfig.json';
+    return appConfig.loadAppConfig(url);
   };
 };
 
